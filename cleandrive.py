@@ -65,7 +65,8 @@ def InitialisingMsg():
 
 #Facedetection along with Alcohol Testing
 def FacedetectInit():
-    # multiple cascades: https://github.com/Itseez/opencv/tree/master/data/haarcascades
+    #Facedetection using haarcascades classifier: https://github.com/Itseez/opencv/tree/master/data/haarcascades
+    #Classifier path : CLEANDRIVE/Cascades/haarcascade_frontalface_default.xml
     faceCascade = cv2.CascadeClassifier('Cascades/haarcascade_frontalface_default.xml')
     cap = cv2.VideoCapture(0)
     cap.set(3,640) # set Width
